@@ -1,16 +1,13 @@
 {
-  "name": "esdoc",
+  "name": "@zigen/esdoc",
   "version": "1.0.1",
-  "description": "Good Documentation Generator For JavaScript",
-  "author": {
-    "name": "h13i32maru",
-    "url": "https://h13i32maru.jp"
-  },
+  "description": "fork from https://github.com/esdoc/esdoc :Good Documentation Generator For JavaScript",
+  "author": "Kentaro Teramot <hrlclb@gmail.com>",
   "homepage": "https://esdoc.org/",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/esdoc/esdoc"
+    "url": "https://github.com/hrl7/esdoc"
   },
   "engines": {
     "node": ">= 6.0.0"
