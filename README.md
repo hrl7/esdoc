@@ -1,9 +1,5 @@
-<!--![Owner Status](https://img.shields.io/badge/owner-busy-red.svg)-->
-[![Build Status](https://travis-ci.org/esdoc/esdoc.svg?branch=master)](https://travis-ci.org/esdoc/esdoc)
-[![Coverage Status](https://codecov.io/gh/esdoc/esdoc/branch/master/graph/badge.svg)](https://codecov.io/gh/esdoc/esdoc)
-[![Document](https://doc.esdoc.org/github.com/esdoc/esdoc/badge.svg?t=0)](https://doc.esdoc.org/github.com/esdoc/esdoc)
+# ESDoc (fork from https://github.com/esdoc/esdoc.git)
 
-# ESDoc
 
 ESDoc is a documentation generator for JavaScript.<br/>
 Please <a href="https://try.esdoc.org">try it out</a>!
@@ -18,11 +14,6 @@ Please <a href="https://try.esdoc.org">try it out</a>!
 - Parse ECMAScript proposals.
 - [ESDoc Hosting Service](https://doc.esdoc.org)
 
-# Users
-- [ESDoc](https://doc.esdoc.org/github.com/esdoc/esdoc/) (self-hosting &#x1F604;)
-- [RxJS](http://reactivex.io/rxjs/)
-- [Sketch API](http://developer.sketchapp.com/reference/api/)
-
 And [more](https://github.com/search?o=desc&q=esdoc+filename%3Apackage.json+-user%3Ah13i32maru+-user%3Aesdoc+-user%3Aes-doc&ref=searchresults&s=indexed&type=Code&utf8=%E2%9C%93).
 
 # Quick Start
@@ -31,7 +22,16 @@ And [more](https://github.com/search?o=desc&q=esdoc+filename%3Apackage.json+-use
 cd your-project/
 
 # install ESDoc and standard plugin
-npm install esdoc esdoc-standard-plugin
+npm install @zigen/esdoc esdoc-standard-plugin unscope-package
+
+# unscoping @zigen/esdoc => esdoc, add this configuration to package.json
+
+"scripts" : {
+  "postinstall: "unscope-package"
+},
+"unscope": [
+  "@zigen/esdoc"
+]
 
 # write a configuration file.
 echo '{
